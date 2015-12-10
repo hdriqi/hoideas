@@ -1,0 +1,23 @@
+<div class="ideaList">
+  <div class="container">
+  
+  <div class="row" ng-repeat="row in rowz">
+    <div class="col-md-3 col-xs-12" ng-repeat="idea in row" >
+      <a ng-href="#/posts/{{idea.$id}}" class="thumbnail">
+        <div class="title">
+        	<h2>{{idea.title}}</h2>
+        </div>
+        <p style="text-align: center; font-size:0.8em; margin-bottom: 2vmin">by {{idea.author.firstname}} {{idea.author.lastname}}</p>
+        <hr>  
+        <div class="briefDesc">
+          {{ idea.content | limitTo : 120 }} <span ng-if="idea.content[121]">...</span>
+        </div>
+        <hr>
+        <div class="author">
+          <p>{{idea.genre}}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  </div>
+</div>

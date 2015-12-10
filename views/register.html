@@ -1,0 +1,60 @@
+<form ng-submit="submitRegister()" class="loginForm" name="login_Form"  novalidate>
+<div class="col-md-4 col-md-offset-4">
+	<table  class="full-width">
+		<tr>
+			<td>
+				<input class="full-width" 
+				ng-class=" login_Form.registerEmail.$dirty && login_Form.registerEmail.$invalid ? 'borderRed' : 'borderGreen'"  type="email" name="registerEmail" placeholder="Email" ng-model-options="{ updateOn: 'blur' }" ng-model="registerEmail" required />
+			</td>		
+		</tr>
+		<tr>
+          <td>
+            <p> <span style="color:white">.</span>
+              <span style="color:red" ng-show="login_Form.registerEmail.$dirty && login_Form.registerEmail.$invalid">
+              <span ng-show="login_Form.registerEmail.$error.email">Please provide real Email</span>
+              </span>
+            </p>
+          </td>
+        </tr>
+
+		<tr>
+			<td>
+				<input class="full-width" ng-class=" login_Form.registerPassword.$dirty && login_Form.registerPassword.$invalid ? 'borderRed' : 'borderGreen'" type="password" name="registerPassword" ng-model-options="{ updateOn: 'blur' }" ng-model="registerPassword" placeholder="Password" ng-minlength="6" required />
+			</td>		
+		</tr>
+		<tr>
+          <td>
+            <p> <span style="color:white">.</span>
+              <span style="color:red" ng-show="login_Form.registerPassword.$dirty && login_Form.registerPassword.$invalid">
+              <span ng-show="login_Form.registerPassword.$error.minlength">Password at least 6 characters</span>
+              </span>
+            </p>
+          </td>
+        </tr>
+
+		<tr>
+			<td>
+				<input class="full-width" type="text" name="registerFirstname" ng-model="registerFirstname" placeholder="Firstname"/>
+			</td>		
+		</tr>
+
+
+		<tr>
+			<td>
+				<input class="full-width" type="text" ng-model="registerLastname" placeholder="Lastname"/>
+			</td>		
+		</tr>
+
+		<tr>
+			<td>
+				<button type="submit">Register</button>
+			</td>		
+		</tr>
+	</table>
+	</div>
+	
+	
+	
+	
+	
+</form>

@@ -1,0 +1,55 @@
+<div class="container">
+<div class="col-md-offset-1 col-md-6 ideas">
+	<hr class="style2">
+	<h1>{{post.title}}</h1>
+	<div class="author">by {{post.author.firstname}} {{post.author.lastname}}</div>
+	<p class="preformatted">{{post.content}}</p>
+
+	<div ng-show="liked">
+		<span class="iconicstroke-star red"></span><span> {{counter}}</span>
+	</div>
+
+	<div ng-hide="liked" style="vertical-align : text-top">
+		<span class="iconicstroke-star" ng-click="inputRating()" ></span><span> {{counter}}</span>
+	</div>
+
+	<hr class="style2">
+</div>
+<div class="col-md-4 col-md-offset-1">
+	<hr class="style2">
+
+	<h3 style="text-align : center">SIMILAR IDEAS</h3>
+	<div ng-repeat="similar in similars" style="margin: 0.8vmin; display: inline">
+		<a href="{{similar.link}}">{{similar.title}}</a>
+	</div>
+	<div style="margin: 2vmin 0">
+		<form ng-submit="submitSimilar()">
+			<input type="text" class="full-width" style="margin: 1vmin 0" ng-model="inputTitle" placeholder="Title">
+			<input type="url" class="full-width" style="margin: 1vmin 0" ng-model="inputLink" placeholder="Link"/>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	<hr class="style2">
+</div>
+</div>
+
+<div class="container">
+
+
+<div class="col-md-offset-1 col-md-6">	
+
+	<h3 style="text-align : center">RESPONSES</h3>
+	<div ng-repeat="comment in comments">
+		<p class="preformatted">{{comment.comment}}</p>
+		<p style="text-align: right">{{comment.author.firstname}} {{comment.author.lastname}}</p>
+		<hr class="style11" />
+	</div>
+
+	<div class="commentBox">
+		<form ng-submit="submitComment()">
+			<textarea ng-model="inputComment"></textarea>
+			<button type="submit">Comment</button>
+		</form>
+	</div>
+</div>
+</div>

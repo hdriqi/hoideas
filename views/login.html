@@ -1,0 +1,58 @@
+<div class="loginForm">
+  <div class="col-md-4 col-md-offset-4">
+    <form name="login_Form" ng-submit="submitLogin()" novalidate>
+      <table class="full-width">
+        <tr>
+          <td>
+            <input class="full-width" ng-class=" login_Form.loginEmail.$dirty && login_Form.loginEmail.$invalid ? 'borderRed' : 'borderGreen' " type="email" name="loginEmail" ng-model="loginEmail" placeholder="Email" required/>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input class="full-width"type="password" name="loginPassword" ng-model="loginPassword" placeholder="Password" /></td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" ng-model="sessionLength"/>
+            <label>Remember me</label>
+          </td>
+        </tr>
+
+        <tr ng-show="invalidEmail">
+          <td>
+            <p>
+              <span style="color:red">Wrong Email</span>
+            </p>
+          </td>
+        </tr>
+
+        <tr ng-show="invalidPassword">
+          <td>
+            <p>
+              <span style="color:red">Wrong Password</span>
+            </p>
+          </td>
+        </tr>
+
+        <tr ng-show="invalidUser">
+          <td>
+            <p>
+              <span style="color:red">User/Email not found</span>
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td><button type="submit" ng-disabled="ntaps.$invalid">Log in</button></td>
+        </tr>
+        
+        <tr>
+          <td>
+            <p>Do not have account yet? <a href="#/register">Register</a> now!</p>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</div>

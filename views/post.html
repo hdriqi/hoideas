@@ -1,0 +1,36 @@
+<div class="formPost">
+	<div class="col-md-6 col-md-offset-3">
+		<div ng-hide="authData" class="non_user">
+		  <p>{{plsMsg}}</p>
+		  <p>Redirecting to main page in {{countDown}}s</p>
+		  or <a ng-href="/login">click here</a>
+		</div>
+
+		<div ng-show="authData">
+		  <form ng-submit="submitPost()">
+			<div class="form-inline">
+			  	<div class="form-group most-left">
+			  		<input style="width: 30vmin" type="text" class="inputPadding" ng-model="inputTitle" placeholder="Title"/>
+			  	</div>
+
+			  	<div class="form-group most-right">
+					<input style="width: 30vmin" ng-model="inputGenre" class="inputPadding" list="genre" name="myGenre" placeholder="Category"/>
+				</div>
+			</div>
+			<datalist id="genre">
+			  <option value="Fashion"/>
+			  <option value="Technology"/>
+			  <option value="Non-profit"/>
+			  <option value="Design"/>
+			  <option value="Craft"/>
+			  <option value="Art"/>
+			  <option value="Music"/>
+			  <option value="Movie"/>
+			</datalist>
+
+		  	<textarea ng-model="inputContent"></textarea>
+		  	<button type="submit">Share!</button>
+		  </form>
+		</div>
+	</div>
+</div>

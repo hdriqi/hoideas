@@ -1,0 +1,399 @@
+@import url(http://weloveiconfonts.com/api/?family=iconicstroke);
+
+/* iconicstroke */
+[class*="iconicstroke-"]:before {
+  font-family: 'IconicStroke', sans-serif;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.iconicstroke-star{
+  -webkit-text-stroke: 1px #1e1e1e;
+  color: white;
+  font-size: 2em;
+}
+
+.iconicstroke-star:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.red{
+  color: red;
+}
+
+body {
+  word-break: break-word;  
+  color: #1e1e1e;
+  font-family: 'geomanist_regularregular';
+  letter-spacing: 0.2em;
+  padding: 0;
+}
+
+h1{
+  margin: 2vh 2vw;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+h2{
+  margin: 2vh 2vw;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 0.25em;
+}
+
+h3{
+  margin: 2vh 2vw;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.25em;
+}
+
+p{
+  font-weight: thin;
+  margin: 0;
+}
+
+a{
+  color: #1e1e1e;
+  border-bottom: dashed 1.5px; 
+  text-decoration: none;
+}
+
+a:hover{
+  color: #1e1e1e;
+  text-decoration: none;
+  border-bottom: solid 1.5px;
+}
+
+a:focus{
+  color: #1e1e1e;
+  text-decoration: none;
+  border: none;
+}
+
+nav{
+  padding: 2vmin;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+nav a{
+  margin: 0 4vmin;
+}
+
+nav a:hover{
+  text-decoration: none;  
+}
+
+nav .right-post{
+  margin: 0;
+  position: absolute;
+  right: 4vmin;
+}
+
+nav .active{
+  color: black;
+  border-bottom: solid 1.5px;
+}
+
+footer{
+  bottom : 0;
+  min-height: auto;
+  height: 20vmin;
+  width : 100%;
+  border-top : solid 1px #1E1E1E;
+  color: white;
+  background-color: #1E1E1E;
+  text-align: center;
+  margin-top: 10vh;
+  padding: 5vmin 2vmin;
+}
+
+body{
+  height: 0;
+}
+
+footer a{
+  color: white;
+}
+
+footer a:hover{
+  color: white;
+}
+
+footer a:focus{
+  color: white;
+}
+.created p {
+  margin : 0;
+}
+
+.card{
+  color: white;
+  background: #1E1E1E;
+}
+
+.thumbnail{
+  min-width: 100%;
+  color: #1e1e1e;
+  border-radius: 0;
+  border: 1px solid #c5c5c5;
+}
+
+a.thumbnail:hover{
+  text-decoration: none;
+  color: #1e1e1e;
+  border: 1px solid #1e1e1e;
+}
+
+.thumbnail h2{
+  text-align: center;
+  margin: 0;
+}
+
+.thumbnail .title{
+  padding: 2vmin;
+}
+
+.thumbnail .author{
+  text-align: center;
+  font-size: 0.8em;
+  padding: 2vh 0;
+}
+
+.thumbnail .briefDesc{
+  text-align: center;
+  margin: 2vh 2vw;
+}
+
+.thumbnail hr{
+  margin: 0 2vw;
+}
+
+.card a{
+  color: black;
+}
+
+.card:hover{
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  transition : 0.4s ease-out;
+}
+
+.thems{
+  padding-top: 5vmin; 
+  margin: 2vh 5vw;
+  min-height: 40vmin;
+}
+
+.logo{
+  margin: 2vh 0;
+}
+
+.etc{
+  margin-bottom: 2vh;
+}
+
+.formPost .most-right{
+  float: right;
+  clear: both;
+}
+
+.formPost .non_user{
+  text-align: center;
+}
+
+.formPost .non_user a{
+  text-decoration: none;
+  margin: 0;
+}
+
+.formPost textarea{
+  font-family: 'geomanist_regularregular';
+  letter-spacing: 0.2em;
+  padding: 1vmin;
+  border-color: #c5c5c5;
+  position: static;
+  margin: 5vh 0; 
+  resize: none;
+  width: 100%;
+  height: 40vh;
+}
+
+.commentBox{
+  padding-top: 2vmin;
+}
+
+textarea{
+  font-family: 'geomanist_regularregular';
+  letter-spacing: 0.2em;
+  padding: 1vmin;
+  border-color: #c5c5c5;
+  position: static;
+  resize: none;
+  width: 100%;
+  height: 20vmin;
+}
+
+textarea:focus{
+  outline: none;
+  border: 1px solid #1e1e1e;
+}
+
+.formPost textarea:focus{
+  outline: none;
+  border: 1px solid #1e1e1e;
+}
+
+.full-width{
+  padding: 1vh 1%;
+  width: 98%;
+  max-height: 5vh;
+  margin: 1.5vh 0;
+}
+
+.fullll{
+  padding: 1vh 1%;
+  width: 100%;
+  max-height: 5vh;
+  margin: 1.5vh 0;
+}
+
+.ideas{
+  text-align: justify;
+  font-size: 1.15em;
+}
+
+.ideas h1{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.ideas .author{
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+label{
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.mainpage .thumbnail{
+  border: solid #1e1e1e;
+  position: relative;
+}
+
+.slide{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  top: 0;
+  left:0;
+  transition : all .2s;
+}
+
+.mainpage .thumbnail:hover .slide{
+  background-color: rgba(0,0,0,.5);
+}
+
+.mainpage .thumbnail {
+  border : 0;
+  padding: 0;
+}
+
+.mainpage .thumbnail img{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+button, input{
+  padding: 0.5vmin;
+  font-family: 'geomanist_regularregular';
+  background: white;
+  border: 1px solid #c5c5c5;
+  color: #1e1e1e;
+  letter-spacing: 0.2em;
+}
+
+
+input:focus{
+  outline: none;
+  border: 1px solid #1e1e1e;
+}
+
+button:hover{
+  background: #1e1e1e;
+  color: white;
+}
+
+.borderRed{
+  border: 1px solid red;
+}
+
+.borderRed:focus{
+  border: 2px solid red;
+}
+
+.borderGreen{
+  border: 1px solid green;
+}
+
+.borderGreen:focus{
+  border: 2px solid green;
+}
+
+button{
+  margin: 2vh 0;
+}
+
+.container-fluid{
+  padding: 1.5vmin;
+}
+
+.postBreak{
+  display: inline-block;
+  margin: 2vmin 0;
+  border-bottom: 1px dashed #1e1e1e;
+}
+
+.preformatted{
+  white-space: pre-wrap;
+  padding: 1.5vmin;
+}
+
+hr.style11 {
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+hr.style12 {
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+    border: 0;
+}
+
+hr.style2 {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.about{
+  line-height: 200%;
+  text-align: justify;
+}
